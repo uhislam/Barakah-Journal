@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Local</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<span class="opener hideOnPrint">
+			<h1>BARAKAH</h1>
+			<p class="Journal">JOURNAL</p>
+		</span>
+		<div class="header">
+			<h2>Daily Planning and Reflection</h2>
+			<p id="aaaa" class="dates">Blabla H BlaBla G</p>
+		</div>
+		<div class="line"></div>
+		<div class="Intentions">
+			<h3 class="hideOnPrint">What are Your most Important Intentions for today?</h3>
+			<h3 class="printOnly">My Most Important Intentions Today</h3>
+			<p class="hideOnPrint">
+				List 5 important to-do (or to-be) intentions for today. Make sure they
+				are allgined with your weekly intentions
+			</p>
+			<p class="printOnly">Don't negotiate on these. Don't get distracted.</p>
+			<ol>
+				<div>
+					<li id="originalAdder" contenteditable="plaintext-only"></li>
+					<button tabindex="-1" onclick="deleteIntention(event)"></button>
+				</div>
+			</ol>
+			<div class="intentionGenerator"></div>
+		</div>
+		<div class="line"></div>
+		<div class="Dua">
+			<h3 class="hideOnPrint">What will you pray istikhara, or make dua, for today?</h3>
+			<h3 class="printOnly">My Dua List for today</h3>
+			<p class="hideOnPrint">See "How to Pray Istikhara" on page 34</p>
+			<p class="printOnly">Reference your "You in 5 Years" Sheet</p>
+			<div class="duaParent">
+				<div class="duaHere" contenteditable="plaintext-only"></div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="reflections">
+			<h4>End of Day Reflections</h4>
+			<p>
+				Hold yourself accountable and give feedback to you self(nafs).<br />Reflect
+				on how intentional you were in adding Barakah to you day.
+			</p>
+			<div class="reflectionText" contenteditable="plaintext-only"></div>
+		</div>
+		<script src="scripts.js"></script>
+	</body>
+</html>
